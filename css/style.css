@@ -21,6 +21,11 @@ import Fonts
 basic 
 ---------------------------------------------------------------------*/
 
+*{
+     box-sizing: border-box;
+     scroll-behavior: smooth;
+}
+
 body {
      color: #666666;
      font-size: 14px;
@@ -299,9 +304,9 @@ header
 .header {
      width: 100%;
      background: rgba(39, 43, 44, 0.87);
-     height: 106px;
-     padding: 37px 30px;
-     position: absolute;
+     height: 60px;
+     padding: 10px 30px;
+     position: fixed;
      z-index: 999;
      box-shadow: 3px 0 13px rgba(30, 30, 30, 0.90);
 }
@@ -315,6 +320,18 @@ menu section
      float: right;
      padding: 0;
 }
+
+.logo{
+     width: 100%;
+}
+
+
+
+@media screen and (max-width: 600px){
+     .logo{
+          width: 40%;
+     }
+} 
 
 .navigation.navbar-dark .navbar-nav .nav-link {
      padding: 0px 30px;
@@ -370,7 +387,7 @@ ul.email li i {
 /** banner_main **/
 
 #top_section {
-     background-image: url('../images/banner.jpg');
+     background-image: url('../images/hero.jpg');
      background-size: cover;
      background-repeat: no-repeat;
      padding-top: 120px;
@@ -421,6 +438,12 @@ ul.email li i {
      font-weight: bold;
      padding-bottom: 25px;
 }
+
+.banner_main .bluid img{
+     width: 30%;
+     min-width: 250px;
+}
+
 
 .banner_main .bluid p {
      color: #fff;
@@ -540,7 +563,7 @@ ul.email li i {
 /** about **/
 
 .about {
-     background: url(../images/about_bg.jpg);
+     /* background: url(../images/about_bg.jpg); */
      background-position: center;
      background-repeat: no-repeat;
      height: 100vh;
@@ -557,13 +580,13 @@ ul.email li i {
 }
 
 .about .titlepage h2 {
-     color: #fff;
+     color: #000000;
 }
 
 .about .titlepage p {
      line-height: 28px;
      padding-top: 20px;
-     color: #fff;
+     color: #000000;
      font-size: 17px;
 }
 
