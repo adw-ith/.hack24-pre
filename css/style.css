@@ -765,6 +765,12 @@ ul.email li i {
      padding: 90px 0;
 }
 
+/* .contact.container.row{
+     display: flex;
+     justify-content: center;
+     align-items: center;
+} */
+
 .contact .titlepage::before {
      right: inherit;
      border: #2e2f34 solid 5px;
