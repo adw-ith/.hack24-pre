@@ -1052,7 +1052,7 @@ ul.email li i {
      justify-content: center;
      align-items: center;
      background-image: linear-gradient(to bottom right, var(--clr-primary),var(--clr-primary-800) );
-     color: white;
+     /* color: white; */
      text-align: center;
      /* line-height: 200px; */
      transition: transform 400ms ease-in-out;
